@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Desconto</title>
+
+</head>
+<body>
+
+<script>
+
+var valor = prompt ("valor:");
+var desconto = prompt ("desconto");
+
+valor = parseFloat (valor);
+
+if (valor>100) {
+desc = valor * 0.05; }
+
+else {
+desc = valor * 0.03; }
+
+total = valor - desc;
+document.write ("desconto:" +desc+ "<br>");
+document.write ("total:" + total);
+
+</script>
+
+</body>
+</html>

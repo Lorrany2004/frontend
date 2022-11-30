@@ -1,0 +1,42 @@
+
+body{
+    background-color:#fff06a;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#e0f129;
+}
+
+.d1{
+    display:block;
+    width: 20%;
+    height: 10em;
+    float:right;
+    text-align:right;
+    background-color: black;
+}
+
+.d2{
+    display:block;
+    width: 20%;
+    height: 10em;
+    float: left;
+    text-align: center;
+    background-color: black;
+}
+
+.d3{
+        display:block;
+        width: 20%;
+        height: 10em;
+        float:right;
+        text-align: center;
+        background-color: black;
+}
+
+.d4{
+    display:block;
+    width: 20%;
+    height: 10em;
+    float:left;
+    text-align: center;
+    background-color: black;
+}

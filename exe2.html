@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Multas</title>
+</head>
+<body>
+  
+<script>
+        qpp=0; tee=0; mull=0;
+        function peixe(){
+        var qpp = parseFloat(pesca.qp.value);
+                if (qpp>50){
+                 tee = qpp -50;
+                 mull = tee *4;     
+                }
+                pesca.mul.value=mull;
+	        pesca.te.value=tee;
+	        pesca.tp.value=qpp;  
+        } 
+</script>
+<form name="pesca" class="form-control">
+<h1>Controle de Pescado</h1>
+Quant. Peixe:
+<input type="text" class="form-control" name="qp"  onchange="peixe()">
+<br>         Multa:
+<input type="text" class="form-control" name="mul"  onchange="this.blur()">
+<br>        Total pescado:
+<input type="text"class="form-control"  name="tp"  onchange="this.blur()">
+<br>        Total excedido:
+<input type="text" class="form-control" name="te" onchange="this.blur()">
+        <br>        <br>        Valor da Multa:
+<input type="text" class="form-control" name="vm"  onchange="this.blur()">
+        <br>        <br>
+<input type="submit" class="btn btn-primary" value="Enviar">
+<input type="reset" class="btn btn-danger" value="Apagar">
+</form>
+    </html>  
+</body>
+</html>

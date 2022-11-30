@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Variável</title>
+</head>
+<body>
+    
+<script>
+
+var id=prompt("Idade:");
+id= parseInt(id);
+permissão ();
+function permissão (){
+
+    if ((id>=16)&& (id<18)){
+document.write("Só pode votar");
+}
+else if (id>=18){
+document.wtite ("Pode votar e dirigir");
+}
+else if (id<16){
+    document.write ("Não pode votar e dirigir");
+}
+}
+</script>
+
+</body>
+</html>
